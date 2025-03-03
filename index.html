@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Registration</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">Event Registration</div>
+    <div class="nav">
+        <a href="#about">About</a>
+        <a href="#details">Event Details</a>
+        <a href="#process">Organizing Process</a>
+        <a href="#eligible">Eligibility</a>
+        <a href="#register">Register</a>
+        <a href="#contact">Contact</a>
+    </div>
+
+    <div class="container">
+        <div id="about" class="section">
+            <h1 style="font-size: 30px;font-weight: 700;font-style: italic;color: darkgreen;">"Innovate 2025 – Code, Create, Conquer"</h1>
+            <h2>About the Event</h2>
+            <p>Welcome to Innovate 2025, a dynamic tech fest designed to bring together creative minds, aspiring developers, and tech enthusiasts to showcase their skills, learn from experts, and compete in an engaging environment. Whether you are a beginner eager to explore the world of technology or an experienced coder ready to challenge yourself, this event has something for everyone!</p>
+            <p>Innovate 2025 is more than just a competition; it is an opportunity to experience technology in action. The event will feature a series of workshops, speaker sessions, and coding challenges, helping participants enhance their technical expertise, network with like-minded individuals, and get recognized for their problem-solving abilities.</p>
+        </div>
+
+        <div id="details" class="section">
+            <h2>Event Details</h2>
+            <ul>
+                <li class="head"><strong> Webinar: Learn from Industry Experts</strong>  
+                    <ul class="describe">
+                        <li>Insights from top professionals on AI, cybersecurity, blockchain, and tech careers.</li> 
+                        <li>Open to all students & professionals – no prior experience required.</li>
+                        <li>Live Q&A sessions, career guidance, and participation certificates.</li>
+                    </ul>
+                </li>
+                <br>
+                <li class="head"><strong>Workshop: Hands-On Training Sessions</strong> 
+                    <ul class="describe">
+                        <li>Practical sessions on web development, AI, cybersecurity, and app development.</li> 
+                        <li>Beginner-friendly, guided by expert mentors.</li>
+                        <li>Real-world projects, interactive learning, and completion certificates.</li>
+                    </ul>
+                </li>
+                <br>
+                <li class="head"><strong>Hackathon: Compete & Build Projects</strong> 
+                    <ul class="describe">
+                    <li>A 24-hour coding challenge to solve real-world problems.</li> 
+                    <li>Work in teams, get mentorship, and build innovative prototypes.</li>
+                    <li>Judged on creativity, execution & impact, with cash prizes & internship opportunities.</li>
+                </ul>
+                </li>
+            </ul>
+        </div>
+
+    <div id="process" class="container section">
+        <h2>Organizing Process</h2>
+        <ol id="p-details"><li>Registration & Team Formation – Participants register and select Webinar, Workshop, or Hackathon. Hackathon teams (max 4 members) can be formed individually or in groups.</li>
+            <li>Pre-Event Preparation – Speakers, mentors, and problem statements are finalized. Participants receive event guidelines.</li>
+            <li>Event Execution – Webinars & workshops are conducted live. Hackathon teams work on projects with mentor support.</li>
+            <li>Evaluation & Judging – Hackathon projects are judged on creativity, feasibility, and execution.</li>
+            <li>Closing & Awards – Winners receive cash prizes, internships, and certificates.</li>
+        </ol>
+    </div>
+
+    <div id="eligible" class="container section">
+        <h2>Eligibility Criteria</h2>
+        <ul>
+            <li>Webinar: Open to all, no experience required.</li>
+            <li>Workshop: Open to beginners and experienced learners, coding knowledge helpful but not mandatory.</li>
+            <li>Hackathon: Open to all; solo or team participation (max 4 members). Basic coding knowledge recommended but beginner-friendly challenges available.</li>
+        </ul>
+    </div>
+
+    <div id="register" class="section">
+        <h2>Register for an Event</h2>
+        <form id="eventForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" placeholder="Your Phone" maxlength="10" required>
+            <select id="eventType">
+                <option value="">Select Event Type</option>
+                <option value="Webinar">Webinar</option>
+                <option value="Workshop">Workshop</option>
+                <option value="Hackathon">Hackathon</option>
+            </select>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</div>
+
+<div class="modal" id="successModal">
+    <p>Registration Successful!</p>
+    <button id="closeModal">OK</button>
+</div>
+    
+    <div id="contact" class="container section">
+        <h2>Contact Us</h2>
+        <p>Email: contact@event.com | Phone: 123-456-7890</p>
+    </div>
+    
+    <script src="script.js"></script> 
+</body>
+</html>
